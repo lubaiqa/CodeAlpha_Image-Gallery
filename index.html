@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Image Gallery</h1>
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="city">City</button>
+        <button class="filter-btn" data-category="animals">Animals</button>
+    </div>
+    <div class="gallery">
+        <div class="thumbnail" data-category="nature" data-src="image1.jpg">
+            <img src="image1.jpg" alt="Mountain Landscape">
+        </div>
+        <div class="thumbnail" data-category="city" data-src="image2.jpg">
+            <img src="image2.jpg" alt="City Skyline">
+        </div>
+        <div class="thumbnail" data-category="animals" data-src="image3.jpg">
+            <img src="image3.jpg" alt="Tiger">
+        </div>
+        <div class="thumbnail" data-category="nature" data-src="image4.jpg">
+            <img src="image4.jpg" alt="Forest Path">
+        </div>
+        <div class="thumbnail" data-category="city" data-src="image5.jpg">
+            <img src="image5.jpg" alt="Urban Street">
+        </div>
+        <div class="thumbnail" data-category="animals" data-src="image6.jpg">
+            <img src="image6.jpg" alt="Elephant">
+        </div>
+        <div class="thumbnail" data-category="nature" data-src="image7.jpg">
+            <img src="image7.jpg" alt="Ocean View">
+        </div>
+        <div class="thumbnail" data-category="city" data-src="image8.jpg">
+            <img src="image8.jpg" alt="City Lights">
+        </div>
+        <div class="thumbnail" data-category="animals" data-src="image9.jpg">
+            <img src="image9.jpg" alt="Lion">
+        </div>
+        <div class="thumbnail" data-category="nature" data-src="image10.jpg">
+            <img src="image10.jpg" alt="Sunset Beach">
+        </div>
+        <div class="thumbnail" data-category="city" data-src="image11.jpg">
+            <img src="image11.jpg" alt="Skyscrapers">
+        </div>
+        <div class="thumbnail" data-category="animals" data-src="image12.jpg">
+            <img src="image12.jpg" alt="Giraffe">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-img" src="" alt="">
+        <div class="controls">
+            <button class="btn" id="prev-btn">&larr;</button>
+            <button class="btn" id="next-btn">&rarr;</button>
+        </div>
+        <button class="close" id="close-btn">&times;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
